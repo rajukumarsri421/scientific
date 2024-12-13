@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conference Presentation - Carbon Sequestration</title>
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 0 20px;
+    }
+
+    /* Main container for the presentation */
+    .presentation {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* Slide container */
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 100%;
+    }
+
+    /* Individual slide */
+    .slide {
+      min-width: 100vw;
+      height: 100vh;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+      box-sizing: border-box;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    /* Slide Titles */
+    h1, h2 {
+      font-family: 'Verdana', sans-serif;
+      color: #1d3557;
+    }
+
+    /* Main content styling */
+    .content {
+      width: 50%;
+      margin: 20px auto;
+      text-align: justify;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    /* Author section style */
+    .author {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .author img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    .author p {
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+
+    /* Navigation buttons */
+    .nav-buttons {
+      position: absolute;
+      bottom: 60px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .nav-buttons button {
+      background-color: #457b9d;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 0 10px;
+    }
+
+    .nav-buttons button:hover {
+      background-color: #1d3557;
+    }
+
+    /* Exit Button */
+    .exit-button {
+      background-color: #e63946;
+      margin-top: 30px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 1.2rem;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    /* Simple Navbar */
+    .navbar {
+      background-color: #1d3557;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+
+    .navbar a {
+      color: white;
+      padding: 15px;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .navbar a:hover {
+      background-color: #457b9d;
+    }
+
+    /* Images Styling */
+    .slide img {
+      width: 70%;
+      max-width: 700px;
+      margin-top: 20px;
+      border-radius: 8px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="#slide1">Home</a>
+    <a href="#slide2">Topic Introduction</a>
+    <a href="#slide3">Technology</a>
+    <a href="#slide4">Results</a>
+    <a href="#slide5">Conclusion</a>
+    <a href="#slide6">References</a>
+  </div>
+
+  <!-- Presentation container -->
+  <div class="presentation">
+    <!-- Slides container -->
+    <div class="slides" id="slides">
+
+      <!-- Slide 1: Author and Topic -->
+      <div class="slide" id="slide1">
+        <h1>Carbon Sequestration and Its Impact on Concrete</h1>
+        <div class="author">
+          <img src="https://via.placeholder.com/80" alt="Author Image">
+          <p>Dr. John Doe - Lead Researcher, University of Environmental Science</p>
+        </div>
+        <p>In this presentation, we will explore the role of carbon sequestration in reducing CO2 emissions and its impact on concrete production.</p>
+      </div>
+
+      <!-- Slide 2: Introduction to Carbon Sequestration -->
+      <div class="slide" id="slide2">
+        <h2>What is Carbon Sequestration?</h2>
+        <div class="content">
+          <p>Carbon sequestration involves capturing CO2 from the atmosphere and storing it to prevent further environmental damage. This technique can significantly reduce atmospheric carbon levels.</p>
+          <img src="https://via.placeholder.com/700x400" alt="Carbon Sequestration Process">
+        </div>
+      </div>
+
+      <!-- Slide 3: Technology Behind Carbon Sequestration -->
+      <div class="slide" id="slide3">
+        <h2>Carbon Capture Technologies</h2>
+        <div class="content">
+          <p>Advanced technologies such as Direct Air Capture (DAC), bioenergy with carbon capture and storage (BECCS), and geological sequestration are playing a key role in mitigating CO2 emissions globally.</p>
+          <img src="https://via.placeholder.com/700x400" alt="Carbon Capture Technology">
+        </div>
+      </div>
+
+      <!-- Slide 4: Results - CO2 Reduction -->
+      <div class="slide" id="slide4">
+        <h2>Results: CO2 Reduction</h2>
+        <div class="content">
+          <p>Our study demonstrated that carbon sequestration could potentially reduce up to 40% of the CO2 emissions in specific industries, significantly mitigating global warming.</p>
+          <img src="https://via.placeholder.com/700x400" alt="CO2 Reduction Chart">
+        </div>
+      </div>
+
+      <!-- Slide 5: Results - Concrete Strength -->
+      <div class="slide" id="slide5">
+        <h2>Impact on Concrete Strength</h2>
+        <div class="content">
+          <p>Through carbon sequestration, concrete not only becomes more eco-friendly, but also gains enhanced strength by carbonation of calcium compounds, making it stronger and more durable.</p>
+          <img src="https://via.placeholder.com/700x400" alt="Concrete Strength">
+        </div>
+      </div>
+
+      <!-- Slide 6: Challenges -->
+      <div class="slide" id="slide6">
+        <h2>Challenges</h2>
+        <div class="content">
+          <p>While promising, carbon sequestration technologies face challenges such as high initial costs, energy consumption, and long-term storage uncertainties. Overcoming these hurdles is crucial for global scale implementation.</p>
+        </div>
+      </div>
+
+      <!-- Slide 7: Conclusion -->
+      <div class="slide" id="slide7">
+        <h2>Conclusion</h2>
+        <div class="content">
+          <p>Carbon sequestration has the potential to become a significant part of climate change mitigation strategies. Continued research into improving efficiency and affordability will accelerate its global adoption.</p>
+        </div>
+      </div>
+
+      <!-- Slide 8: Future Directions -->
+      <div class="slide" id="slide8">
+        <h2>Future Directions</h2>
+        <div class="content">
+          <p>In the future, integration with renewable energy sources and scaling up technologies will increase the impact of carbon sequestration, making it an essential tool for carbon-neutral societies.</p>
+        </div>
+      </div>
+
+      <!-- Slide 9: Key Takeaways -->
+      <div class="slide" id="slide9">
+        <h2>Key Takeaways</h2>
+        <div class="content">
+          <p>Carbon sequestration is essential for combating climate change. Its application in concrete production provides both environmental and structural benefits.</p>
+        </div>
+      </div>
+
+      <!-- Slide 10: References -->
+      <div class="slide" id="slide10">
+        <h2>References</h2>
+        <div class="content">
+          <p>1. Smith, J., et al. (2023). "Carbon Sequestration and Climate Change." Environmental Science Journal.</p>
+          <p>2. Green, A., et al. (2022). "Technologies in Carbon Capture." Sustainable Energy Review.</p>
+          <p>3. Lee, M., et al. (2021). "Impact of Carbon Sequestration on Concrete." Nature Materials.</p>
+        </div>
+        <!-- <button class="exit-button" onclick="goToFirstSlide()">Exit</button> -->
+      </div>
+
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="nav-buttons">
+      <button id="prevBtn">Previous</button>
+      <button id="nextBtn">Next</button>
+      <button class="exit-button" onclick="goToFirstSlide()">Exit</button>
+    </div>
+
+  </div>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.getElementById('slides');
+    const totalSlides = document.querySelectorAll('.slide').length;
+
+    // Navigate to next slide
+    document.getElementById('nextBtn').addEventListener('click', () => {
+      if (currentSlide < totalSlides - 1) {
+        currentSlide++;
+        slides.style.transform = `translateX(-${currentSlide * 100}vw)`;
+      }
+    });
+
+    // Navigate to previous slide
+    document.getElementById('prevBtn').addEventListener('click', () => {
+      if (currentSlide > 0) {
+        currentSlide--;
+        slides.style.transform = `translateX(-${currentSlide * 100}vw)`;
+      }
+    });
+
+    // Navigate to first slide
+    function goToFirstSlide() {
+      currentSlide = 0;
+      slides.style.transform = `translateX(0)`;
+    }
+
+    // Navbar links functionality
+    document.querySelectorAll('.navbar a').forEach((link, index) => {
+      link.addEventListener('click', () => {
+        currentSlide = index;
+        slides.style.transform = `translateX(-${currentSlide * 100}vw)`;
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conference Presentation - Carbon Sequestration</title>
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 0 20px;
+    }
+
+    /* Main container for the presentation */
+    .presentation {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* Slide container */
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 100%;
+    }
+
+    /* Individual slide */
+    .slide {
+      min-width: 100vw;
+      height: 100vh;
+      background-color: #edf2f4; /* Light dim color */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+      box-sizing: border-box;
+      border-radius: 8px;
+      text-align: center;
+      position: relative;
+    }
+
+    /* Date Styling in top-right button area */
+    .date {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 1rem;
+      color: #1d3557;
+    }
+
+    h1, h2 {
+      font-family: 'Verdana', sans-serif;
+      color: #1d3557;
+    }
+
+    /* Main content styling */
+    .content {
+      width: 50%;
+      margin: 20px auto;
+      text-align: justify;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      border-left: 3px solid #1d3557; /* Vertical line on the left */
+      border-right: 3px solid #1d3557; /* Vertical line on the right */
+      padding: 10px 20px; /* Adds space inside the content */
+    }
+
+    /* Author and Institute + Topic Box */
+    .intro-box {
+      background-color: #457b9d;
+      color: white;
+      padding: 20px 30px;
+      border-radius: 10px;
+      text-align: center;
+      position: relative;
+      width: 60%; /* Smaller box width */
+      margin: 0 auto;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      background: rgba(69, 123, 157, 0.8); /* Shade color */
+    }
+
+    .intro-box h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .intro-box p {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .intro-box img {
+      width: 70%;
+      max-width: 400px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    /* Navigation buttons */
+    .nav-buttons {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 30px; /* Added gap between buttons */
+    }
+
+    .nav-buttons button {
+      background-color: #457b9d;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .nav-buttons button:hover {
+      background-color: #1d3557;
+    }
+
+    /* Exit Button */
+    .exit-button {
+      background-color: #e63946;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    /* Simple Navbar */
+    .navbar {
+      background-color: #1d3557;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+
+    .navbar a {
+      color: white;
+      padding: 15px;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .navbar a:hover {
+      background-color: #457b9d;
+    }
+
+    /* Images Styling */
+    .slide img {
+      width: 70%;
+      max-width: 700px;
+      margin-top: 20px;
+      border-radius: 8px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="/article.html">Home</a>
+    <a href="#slide2">Topic Introduction</a>
+    <a href="#slide3">Technology</a>
+    <a href="#slide4">Results</a>
+    <a href="#slide5">Conclusion</a>
+    <a href="#slide6">References</a>
+  </div>
+
+  <!-- Presentation container -->
+  <div class="presentation">
+    <!-- Slides container -->
+    <div class="slides" id="slides">
+
+      <!-- Slide 1: Author, Institute, Date and Topic -->
+      <div class="slide" id="slide1">
+        <div class="date">December 12, 2024</div>
+        
+        <!-- Intro Box containing Author Name, Topic, and Image -->
+        <div class="intro-box">
+          <h1>Carbon Sequestration and Its Impact on Concrete</h1>
+          <p><strong>Author:</strong> Raju Kumar</p>
+          <p><strong>Institute:</strong> Department of Civil Engineering, IIT-Hydrabad</p>
+          <img src="/cement.webp" alt="Carbon Sequestration">
+        </div>
+      </div>
+
+      <!-- Slide 2: Introduction to Carbon Sequestration -->
+      <div class="slide" id="slide2">
+        <div class="date">December 12, 2024</div>
+        <h2>What is Carbon Sequestration?</h2>
+        <div class="content">
+          <p>Carbon sequestration is the process of capturing and storing carbon dioxide (CO₂) from the atmosphere to reduce its concentration and mitigate the impacts of climate change. It occurs in two main forms: natural and artificial. Natural carbon sequestration happens through processes such as photosynthesis, where plants, trees, and soils absorb CO₂. Oceans also play a significant role by absorbing large amounts of carbon from the atmosphere. Artificial carbon sequestration, on the other hand, involves technologies like carbon capture and storage (CCS), where CO₂ emissions from industrial sources and power plants are captured before they can be released into the atmosphere. The captured CO₂ is then transported and stored underground in geological formations like depleted oil and gas fields or deep saline aquifers. Both natural and artificial methods of carbon sequestration help reduce atmospheric CO₂ levels, which is crucial for slowing global warming and its associated environmental impacts.</p>
+        </div>
+      </div>
+
+      <!-- Slide 3: Technology Behind Carbon Sequestration -->
+      <div class="slide" id="slide3">
+        <div class="date">December 12, 2024</div>
+        <h2>Carbon Capture Technologies</h2>
+        <div class="content">
+          <p>Advanced technologies such as Direct Air Capture (DAC), bioenergy with carbon capture and storage (BECCS), and geological sequestration are playing a key role in mitigating CO2 emissions globally.</p>
+          <img src="https://via.placeholder.com/700x400" alt="Carbon Capture Technology">
+        </div>
+      </div>
+
+      <!-- Slide 4: Results - CO2 Reduction -->
+      <div class="slide" id="slide4">
+        <div class="date">December 12, 2024</div>
+        <h2>Results: CO2 Reduction</h2>
+        <div class="content">
+          <p>Our study demonstrated that carbon sequestration could potentially reduce up to 40% of the CO2 emissions in specific industries, significantly mitigating global warming.</p>
+          <img src="https://via.placeholder.com/700x400" alt="CO2 Reduction Chart">
+        </div>
+      </div>
+
+      <!-- Slide 5: Results - Concrete Strength -->
+      <div class="slide" id="slide5">
+        <div class="date">December 12, 2024</div>
+        <h2>Impact on Concrete Strength</h2>
+        <div class="content">
+          <p>Through carbon sequestration, concrete not only becomes more eco-friendly, but also gains enhanced strength by carbonation of calcium compounds, making it stronger and more durable.</p>
+          <img src="https://via.placeholder.com/700x400" alt="Concrete Strength">
+        </div>
+      </div>
+
+      <!-- Slide 6: Challenges -->
+      <div class="slide" id="slide6">
+        <div class="date">December 12, 2024</div>
+        <h2>Challenges</h2>
+        <div class="content">
+          <p>While promising, carbon sequestration technologies face challenges such as high initial costs, energy consumption, and long-term storage uncertainties. Overcoming these hurdles is crucial for global scale implementation.</p>
+        </div>
+      </div>
+
+      <!-- Slide 7: Conclusion -->
+      <div class="slide" id="slide7">
+        <div class="date">December 12, 2024</div>
+        <h2>Conclusion</h2>
+        <div class="content">
+          <p>Carbon sequestration has the potential to become a significant part of climate change mitigation strategies. Continued research into improving efficiency and affordability will accelerate its global adoption.</p>
+        </div>
+      </div>
+
+      <!-- Slide 8: Future Directions -->
+      <div class="slide" id="slide8">
+        <div class="date">December 12, 2024</div>
+        <h2>Future Directions</h2>
+        <div class="content">
+          <p>In the future, integration with renewable energy sources and scaling up technologies will increase the impact of carbon sequestration, making it an essential tool for carbon-neutral societies.</p>
+        </div>
+      </div>
+
+      <!-- Slide 9: Key Takeaways -->
+      <div class="slide" id="slide9">
+        <div class="date">December 12, 2024</div>
+        <h2>Key Takeaways</h2>
+        <div class="content">
+          <p>Carbon sequestration is essential for combating climate change. Its application in concrete production provides both environmental and structural benefits.</p>
+        </div>
+      </div>
+
+      <!-- Slide 10: References -->
+      <div class="slide" id="slide10">
+        <div class="date">December 12, 2024</div>
+        <h2>References</h2>
+        <div class="content">
+          <p>1. Smith, J., et al. (2023). "Carbon Sequestration and Climate Change." Environmental Science Journal.</p>
+          <p>2. Green, A., et al. (2022). "Technologies in Carbon Capture." Sustainable Energy Review.</p>
+          <p>3. Lee, M., et al. (2021). "Impact of Carbon Sequestration on Concrete." Nature Materials.</p>
+        </div>
+        <!-- Exit Button -->
+        <button class="exit-button" onclick="goToFirstSlide()">Exit</button>
+      </div>
+
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="nav-buttons">
+      <button onclick="prevSlide()">Previous</button>
+      <button onclick="nextSlide()">Next</button>
+    </div>
+  </div>
+
+  <script>
+    let currentSlide = 0;
+
+    // Function to go to the next slide
+    function nextSlide() {
+      const slides = document.querySelector('.slides');
+      const totalSlides = document.querySelectorAll('.slide').length;
+
+      if (currentSlide < totalSlides - 1) {
+        currentSlide++;
+      } else {
+        currentSlide = 0;
+      }
+
+      slides.style.transform = `translateX(-${currentSlide * 100}vw)`;
+    }
+
+    // Function to go to the previous slide
+    function prevSlide() {
+      const slides = document.querySelector('.slides');
+      const totalSlides = document.querySelectorAll('.slide').length;
+
+      if (currentSlide > 0) {
+        currentSlide--;
+      } else {
+        currentSlide = totalSlides - 1;
+      }
+
+      slides.style.transform = `translateX(-${currentSlide * 100}vw)`;
+    }
+
+    // Function to go to the first slide
+    function goToFirstSlide() {
+      const slides = document.querySelector('.slides');
+      currentSlide = 0;
+      slides.style.transform = `translateX(0vw)`;
+    }
+  </script>
+</body>
+</html>

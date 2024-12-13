@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific Conference: Carbon Sequestration</title>
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Presentation container */
+    .presentation {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Slide container */
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .slide {
+      min-width: 100vw;
+      height: 100vh;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .slide h1, .slide h2, .slide p {
+      text-align: center;
+    }
+
+    .slide h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .slide h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .slide p {
+      font-size: 1.2rem;
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+
+    .author img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+
+    /* Navigation Buttons */
+    .nav-buttons {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      right: 10px;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+
+    .nav-buttons button {
+      background-color: #2a3d66;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .nav-buttons button:hover {
+      background-color: #1d2d4c;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="presentation">
+    <!-- Slide container for horizontal flow -->
+    <div class="slides" id="slides">
+
+      <!-- Slide 1: Institute Name, Researcher Details, Topic Name -->
+      <div class="slide">
+        <div>
+          <h1>Carbon Sequestration</h1>
+          <p>A Scientific Study on the Role of Carbon Capture in Mitigating Climate Change</p>
+          <div class="author">
+            <img src="https://via.placeholder.com/80" alt="Author Image">
+            <span>Dr. John Doe - Lead Researcher, Environmental Science Department</span>
+          </div>
+          <p>Institute: University of Environmental Science</p>
+        </div>
+      </div>
+
+      <!-- Slide 2: What is Carbon Sequestration? -->
+      <div class="slide">
+        <div>
+          <h2>What is Carbon Sequestration?</h2>
+          <p>
+            Carbon sequestration is the process of capturing and storing atmospheric CO2 to mitigate climate change. This process occurs naturally through plants and oceans, and can also be engineered through technologies like carbon capture and storage (CCS).
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 3: Importance of Carbon Sequestration -->
+      <div class="slide">
+        <div>
+          <h2>Why is Carbon Sequestration Important?</h2>
+          <p>
+            The excessive accumulation of CO2 in the atmosphere is a major contributor to global warming. Carbon sequestration helps in reducing the greenhouse gas levels, thus slowing down the rate of climate change.
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 4: Methodology -->
+      <div class="slide">
+        <div>
+          <h2>Methodology</h2>
+          <p>
+            This study explores various carbon sequestration techniques, including direct air capture (DAC) and geological storage. These methods focus on capturing CO2 emissions from industrial processes and storing them underground or in other stable forms.
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 5: Results - CO2 Reduction -->
+      <div class="slide">
+        <div>
+          <h2>Results - CO2 Reduction</h2>
+          <p>
+            Our study showed that through effective carbon capture methods, up to 40% of industrial CO2 emissions could be sequestered, significantly lowering the overall carbon footprint.
+          </p>
+          <img src="https://via.placeholder.com/700x400" alt="Graph Showing CO2 Reduction">
+        </div>
+      </div>
+
+      <!-- Slide 6: Results - Enhanced Concrete Strength -->
+      <div class="slide">
+        <div>
+          <h2>Results - Enhanced Concrete Strength</h2>
+          <p>
+            Carbon sequestration not only reduces CO2 but also improves the strength of concrete by carbonating calcium compounds. This makes it a dual-benefit technology for construction.
+          </p>
+          <img src="https://via.placeholder.com/700x400" alt="Concrete Strength Graph">
+        </div>
+      </div>
+
+      <!-- Slide 7: Challenges -->
+      <div class="slide">
+        <div>
+          <h2>Challenges</h2>
+          <p>
+            While promising, carbon sequestration faces challenges such as high costs, energy consumption, and long-term storage risks. Overcoming these barriers is critical for widespread adoption.
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 8: Conclusion -->
+      <div class="slide">
+        <div>
+          <h2>Conclusion</h2>
+          <p>
+            Carbon sequestration technologies represent a viable solution to reduce CO2 emissions. With continuous improvements in efficiency and cost-effectiveness, they will be crucial in mitigating climate change.
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 9: Future Directions -->
+      <div class="slide">
+        <div>
+          <h2>Future Directions</h2>
+          <p>
+            Ongoing research into direct air capture, ocean fertilization, and afforestation could further enhance the efficiency of carbon sequestration. These innovations will help scale up efforts globally.
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 10: References -->
+      <div class="slide">
+        <div>
+          <h2>References</h2>
+          <ul>
+            <li>1. Smith, J., et al. (2023). "Carbon Sequestration and Climate Change." Environmental Science Journal, 45(3), 123-134.</li>
+            <li>2. Green, A., et al. (2022). "Carbon Capture Technologies." Journal of Sustainable Solutions, 10(2), 78-92.</li>
+            <li>3. Lee, M., et al. (2021). "Impact of Carbon Sequestration on Global Warming." Nature Climate Change, 11(5), 456-467.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Navigation Buttons -->
+  <div class="nav-buttons">
+    <button id="prevBtn">Previous</button>
+    <button id="nextBtn">Next</button>
+  </div>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.getElementById('slides');
+    const totalSlides = document.querySelectorAll('.slide').length;
+
+    // Next slide function
+    document.getElementById('nextBtn').addEventListener('click', () => {
+      if (currentSlide < totalSlides - 1) {
+        currentSlide++;
+        slides.style.transform = `translateX(-${currentSlide * 100}vw)`;
+      }
+    });
+
+    // Previous slide function
+    document.getElementById('prevBtn').addEventListener('click', () => {
+      if (currentSlide > 0) {
+        currentSlide--;
+        slides.style.transform = `translateX(-${currentSlide * 100}vw)`;
+      }
+    });
+  </script>
+
+</body>
+</html>
